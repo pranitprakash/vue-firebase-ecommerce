@@ -3,14 +3,6 @@
     <h1>{{ msg }}</h1>
     
   </div>
-
-  <div>
-  <input type="text" v-model="lastName" placeholder="Your Name" />
- 
-  <h1>  {{lastName}}  </h1>
-
-  <button v-on:click="clickedMe()"  ></button>
-  </div>
 </template>
 
 <script>
@@ -18,17 +10,6 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
-  },
-  data(){
-    return{
-      lastName:""
-    }
-  },
-  methods:{
-
-    clickedMe(){
-      console.log("you clicked me")
-    }
   }
 };
 </script>
